@@ -11,7 +11,7 @@ class main_screen extends StatefulWidget {
 }
 
 class _mainScreenState extends State<main_screen> {
-  final mqttClientWrapper = MQTTClientWrapper('broker.emqx.io', 'test/topic', 1883);
+  final mqttClientWrapper = MQTTClientWrapper('broker.emqx.io', 'IOT_FYP_24_COMSATS', 1883);
   bool isSubscribed = false;
   String latestMsg = 'No messages yet';
   double weight = 0.0;
